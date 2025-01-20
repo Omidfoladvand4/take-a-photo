@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3c0121, #044a5b);
+  gap: 3rem;
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.main {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background: linear-gradient(90deg, #0c910c, red);
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#videoCount {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#videoCount #video {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+#videoCount #capture-btn {
+  width: 30%;
+  height: 45px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  background-color: white;
+  border: none;
+  color: teal;
+  border-radius: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#videoCount #capture-btn:hover {
+  background-color: teal;
+  color: white;
+  box-shadow: 0px 0px 10px 5px white;
+  transform: scale(0.9);
+}
+#canvasCount {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: block;
+  object-fit: cover;
+}
+#canvas {
+  width: 100%;
+  border-radius: 20px;
+}
+#download-link {
+  display: none;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  background: #eeee;
+  padding: 1rem;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#download-link:hover {
+  background-color: red;
+  color: wheat;
+}

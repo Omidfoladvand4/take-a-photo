@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>گرفتن عکس از دوربین</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div id="videoCount">
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="capture-btn">گرفتن عکس</button>
+      </div>
+      <div id="canvasCount">
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <img id="photo" src="" alt="عکس" style="display: none" />
+        <a id="download-link" download="canvas.png">دانلود عکس</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
